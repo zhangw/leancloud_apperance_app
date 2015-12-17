@@ -3,6 +3,11 @@
 一个简单的使用 Flask 的 Python 应用。
 可以运行在 LeanEngine Python 运行时环境。
 
+## 收集微博数据，并进行颜值计算
+ - 路由/weibos接受POST请求，将微博数据保存为Weibo对象。
+ - `cloud.py`定义的afterSave函数用于计算Weibo对象的颜值。
+ - 颜值分析使用的相关代码位于`./libs`目录，来自于[这里](https://github.com/zhangw/msxiaobing_apperance.git)。
+
 ## 本地运行
 
 首先确认本机已经安装 [Python](http://python.org/)2.7 运行环境。然后执行下列指令：
