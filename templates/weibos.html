@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>微博列表</title>
+    <link rel="stylesheet" href="/static/style.css" type="text/css">
+  </head>
+  <body>
+    <div id="container">
+      <h1></h1>
+      <ul>
+        {% for weibo in weibos %}
+        <li>{{ weibo.get('nickname') }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </body>
+</html>
